@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+/* RESET PAGE */
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+    color: var(--font-color);
+}
+/* ROOT COLORS */
+:root{
+    --background-color: #efebe8;
+    --background-color-secondary: #c9ced769;
+    --font-color: #111111;
+    --font-grayscale: #7a7a7a;
+    --accent-color: #3a486b;
+}
+
+header {
+    width: 100%;
+    background-color: var(--background-color-secondary);
+    display: flex;
+    justify-content: space-around;
+    gap: 1rem;
+    padding: 1.4rem;
+}
+
+header nav {
+    display: flex;
+}
+
+header ul {
+    height: 100%;
+    align-items: center;
+    display: flex;
+    gap: 1rem;
+}
+
+header ul li{
+    transition-property: text-decoration;
+    transition-duration: 1.5s;
+    font-size: 1.2rem;
+}
+
+header ul li:hover {
+    text-decoration: underline;
+}
+
+header div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header div i {
+    font-size: 1.5rem;
+    margin-right: 1rem;
+    display: flex;
+}
+
+/* Todos os botoes */
+
+.btn{
+    background-color: black;
+    border-radius: 4px;
+    color: #ddd;
+    padding: 0.6rem 1rem;
+}
