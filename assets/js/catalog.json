@@ -1,0 +1,58 @@
+[
+  {
+    "id": 1,
+    "link": "",
+    "img": "assets/imgs/catalog/makeup.png",
+    "name": "Base Líquida Matte",
+    "price": 49.9,
+    "category": "Pele"
+  },
+  {
+    "id": 2,
+    "link": "",
+    "img": "assets/imgs/catalog/makeup.png",
+    "name": "Batom Vermelho Intenso",
+    "price": 29.9,
+    "category": "Lábios"
+  },
+  {
+    "id": 3,
+    "link": "",
+    "img": "assets/imgs/catalog/makeup.png",
+    "name": "Paleta de Sombras Neon",
+    "price": 69.9,
+    "category": "Olhos"
+  },
+  {
+    "id": 4,
+    "link": "",
+    "img": "assets/imgs/catalog/makeup.png",
+    "name": "Delineador Líquido Preto",
+    "price": 24.9,
+    "category": "Olhos"
+  },
+  {
+    "id": 5,
+    "link": "",
+    "img": "assets/imgs/catalog/makeup.png",
+    "name": "Pó Compacto Suave",
+    "price": 32.9,
+    "category": "Pele"
+  },
+  {
+    "id": 6,
+    "link": "",
+    "img": "assets/imgs/catalog/makeup.png",
+    "name": "Gloss Transparente",
+    "price": 19.9,
+    "category": "Lábios"
+  },
+  {
+    "id": 7,
+    "link": "",
+    "img": "assets/imgs/catalog/makeup.png",
+    "name": "Máscara de Cílios Volume+",
+    "price": 34.9,
+    "category": "Olhos"
+  }
+]

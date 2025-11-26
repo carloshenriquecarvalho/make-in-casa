@@ -1,0 +1,97 @@
+/* FONTS */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+/* RESET PAGE */
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  color: var(--font-color);
+}
+/* ROOT COLORS */
+* {
+  --background-color: #ffffff;
+  --background-color-secondary: #e4e4e49c;
+  --font-color: #111111;
+  --font-grayscale: #555555;
+  --accent-color: #3a486b;
+}
+/* BODY */
+body {
+  background-color: var(--background-color);
+}
+/* CONTENT */
+.content {
+  width: 100% !important;
+  max-width: 1480px;
+  height: max-content;
+  margin-inline: auto;
+}
+/* CATALOG */
+.catalog {
+  width: 80%;
+  padding: 0px 100px;
+  margin-top: 30px;
+}
+/* TITLES */
+.title {
+  width: 100%;
+}
+
+.title h3 {
+  font-size: 2rem;
+}
+
+.title p {
+  font-size: 1.2rem;
+  color: var(--font-grayscale);
+}
+/* BOX PRODUCTS */
+.boxProducts {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 30px;
+}
+
+.boxProducts li {
+  background-color: var(--background-color-secondary);
+  border-radius: 20px;
+}
+
+.boxProducts li a {
+  width: 100%;
+  display: flex;
+  padding: 10px;
+  flex-direction: column;
+}
+
+.boxProducts li a img {
+  width: 100%;
+}
+
+.boxProducts li a figure {
+  background-color: var(--background-color);
+  border-radius: 10px;
+  width: 100%;
+  height: 230px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.boxProducts h3 {
+  width: 80%;
+  margin-top: 10px;
+  line-height: 20px;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: var(--font-grayscale);
+}
+
+.boxProducts h6 {
+  margin-top: 10px;
+  font-size: 1.2rem;
+}
