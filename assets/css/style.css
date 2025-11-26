@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
-/* RESET PAGE */
+
 * {
     padding: 0;
     margin: 0;
@@ -9,7 +9,11 @@
     font-family: "Montserrat", sans-serif;
     color: var(--font-color);
 }
-/* ROOT COLORS */
+
+::-webkit-scrollbar {
+    display: none;
+}
+
 :root{
     --background-color: #efebe8;
     --background-color-secondary: #c9ced769;
@@ -20,11 +24,16 @@
 
 header {
     width: 100%;
-    background-color: var(--background-color-secondary);
+    background-color: white;
     display: flex;
     justify-content: space-around;
     gap: 1rem;
-    padding: 1.4rem;
+    height: 89px;
+    z-index: 999;
+    position: fixed;
+    top: 0;
+    left: 0;
+    box-shadow: 0 10px 30px 0 rgba(0,0,0,0.2);
 }
 
 header nav {
@@ -60,11 +69,94 @@ header div i {
     display: flex;
 }
 
-/* Todos os botoes */
-
 .btn{
     background-color: black;
     border-radius: 4px;
     color: #ddd;
     padding: 0.6rem 1rem;
+}
+
+.hero {
+    background-color: white;
+    height: calc(100vh - 89px);
+    padding: 0 0 0 100px ;
+    justify-content: center;
+    margin-top: 85px;
+    display: flex;
+    width: 100%;
+}
+
+.hero-text-container {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-right: 50px;
+}
+
+.hero-text-container h1 {
+    font-size: 6rem;
+}
+
+.hero-text-container p {
+    font-size: 1.5rem;
+}
+
+.hero-button-box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 20px;
+}
+
+.bg-solid {
+    border-radius: 10px;
+    border: 1px solid black;
+    padding: 0.8rem;
+    background-color: black;
+    text-align: center;
+    color: white;
+    width: 150px;
+}
+
+.bg-transparent {
+    border-radius: 10px;
+    border: 1px solid var(--accent-color);
+    padding: 0.8rem;
+    text-align: center;
+    width: 150px;
+}
+
+.card-icon-container {
+    display: flex;
+}
+
+.card-icon-container div {
+    display: flex;
+    margin-top: 75px;
+    flex-direction: column;
+    align-items: center;
+    width: max-content;
+}
+
+.card-icon-container div p{
+    text-align: center;
+    font-size: 1.4rem;
+}
+
+.card-icon-container i {
+    font-size: 1.5rem;
+}
+
+.img-hero {
+    width: 50%;
+    background-color: var(--accent-color);
+    height: 100%;
+}
+
+.img-hero img {
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
 }
