@@ -3,21 +3,65 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="assets/fonts/uicons-thin-chubby/css/uicons-thin-chubby.css"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="assets/css/catalog.css" />
     <title>Make In Casa - Catalogo</title>
   </head>
   <body>
     <!-- MENU -->
-    <!-- CATALOG -->
-    <section class="catalog content">
-      <div class="title">
-        <h3>Catálogo de Maquiagens</h3>
-        <p>Produtos em alta</p>
+    <header>
+      <img src="" alt="" />
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#" class="marked-link">Catalogo</a></li>
+          <li><a href="#">Sobre</a></li>
+          <li><a href="#">Contato</a></li>
+          <li><a href="#">Mais</a></li>
+        </ul>
+      </nav>
+      <div>
+        <i class="fi-tc-cart-shopping-fast"></i>
       </div>
-      <ul class="boxProducts">
-        <!-- MAKEUP -->
-      </ul>
-    </section>
+    </header>
+    <main>
+      <!-- BANNER CATALOG -->
+      <section class="banner-catalog">
+        <div>
+          <i class="fi-tc-shopping-bag"></i>
+          <h3>Catálogo</h3>
+          <h4><em>Make in Casa</em></h4>
+        </div>
+      </section>
+      <!-- CATALOG -->
+      <section class="catalog content">
+        <div class="title">
+          <div>
+            <h2>Produtos em <em>Destaque</em></h2>
+            <p>Os melhores produtos da região</p>
+          </div>
+          <div class="title-search">
+            <i class="fi-tc-search"></i>
+            <input
+              type="search"
+              name=""
+              id="search"
+              placeholder="Pesquisar produto..."
+            />
+          </div>
+        </div>
+        <div class="no-product">
+          <i class="fi-tc-sad"></i>
+          <h4>O produto <em></em> não existe ou não foi encontrado!</h4>
+        </div>
+        <ul class="products-box">
+          <!-- MAKEUP -->
+        </ul>
+      </section>
+    </main>
     <!-- FOOTER -->
     <!-- SCRIPT JS -->
     <script src="assets/js/index.js"></script>
