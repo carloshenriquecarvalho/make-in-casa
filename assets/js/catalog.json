@@ -2,57 +2,65 @@
   {
     "id": 1,
     "link": "",
-    "img": "assets/imgs/catalog/makeup.png",
-    "name": "Base Líquida Matte",
-    "price": 49.9,
+    "img": "assets/imgs/catalog/baseliquidacor310.png",
+    "name": "Base Líquida Cor 310 Make",
+    "price": 94.9,
     "category": "Pele"
   },
   {
     "id": 2,
     "link": "",
-    "img": "assets/imgs/catalog/makeup.png",
-    "name": "Batom Vermelho Intenso",
-    "price": 29.9,
+    "img": "assets/imgs/catalog/batomvermelhointense.png",
+    "name": "Batom Vermelho Intense",
+    "price": 32.9,
     "category": "Lábios"
   },
   {
     "id": 3,
     "link": "",
-    "img": "assets/imgs/catalog/makeup.png",
-    "name": "Paleta de Sombras Neon",
-    "price": 69.9,
+    "img": "assets/imgs/catalog/paletadesombrasbrunatavares.png",
+    "name": "Paleta De Sombras Bruna Tavares",
+    "price": 72.3,
     "category": "Olhos"
   },
   {
     "id": 4,
     "link": "",
-    "img": "assets/imgs/catalog/makeup.png",
-    "name": "Delineador Líquido Preto",
-    "price": 24.9,
+    "img": "assets/imgs/catalog/dailuscanetadelineadoracat.png",
+    "name": "Dailus Caneta Delineador Cat",
+    "price": 32.33,
     "category": "Olhos"
   },
   {
     "id": 5,
     "link": "",
-    "img": "assets/imgs/catalog/makeup.png",
-    "name": "Pó Compacto Suave",
-    "price": 32.9,
+    "img": "assets/imgs/catalog/pocompactovultmakeupcor04.png",
+    "name": "Pó Compacto Vult Make Up Cor 04",
+    "price": 38.13,
     "category": "Pele"
   },
   {
     "id": 6,
     "link": "",
-    "img": "assets/imgs/catalog/makeup.png",
-    "name": "Gloss Transparente",
-    "price": 19.9,
+    "img": "assets/imgs/catalog/lipglossvolumoso.png",
+    "name": "Lip Gloss Volumoso incolor Max love",
+    "price": 17.1,
     "category": "Lábios"
   },
   {
     "id": 7,
     "link": "",
-    "img": "assets/imgs/catalog/makeup.png",
-    "name": "Máscara de Cílios Volume+",
-    "price": 34.9,
+    "img": "assets/imgs/catalog/mascaradecilioslavavel.png",
+    "name": "Máscara de Cílios Lavável",
+    "price": 33.01,
+    "category": "Olhos"
+  },
+  {
+    "id": 8,
+    "link": "",
+    "img": "assets/imgs/catalog/miniblushbastaorosa.png",
+    "name": "Mini Blush Em Bastão Rosa",
+    "price": 56.03,
     "category": "Olhos"
   }
 ]

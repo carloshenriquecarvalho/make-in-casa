@@ -9,7 +9,7 @@
     />
     <link rel="stylesheet" href="assets/css/catalog.css" />
     <link rel="stylesheet" href="assets/css/messages.css" />
-    <title>Make In Casa - Catalogo</title>
+    <title>Carrinho de Compras - Make In Casa</title>
   </head>
   <body>
     <!-- MENU -->
@@ -24,8 +24,8 @@
           <li><a href="#">Mais</a></li>
         </ul>
       </nav>
-      <div class="box-icon-cart">
-        <a href="cart.html"><i class="fi-tc-cart-shopping-fast"></i></a>
+      <div class="box-icon-cart" title="Carrinho de Compras">
+        <i class="fi-tc-cart-shopping-fast"></i>
         <span data-cart-count>0</span>
       </div>
     </header>
@@ -35,42 +35,44 @@
         <i class="fi-tc-octagon-check"></i> Produto Adicionado
       </div>
       <div class="message-warning-final">
-        <i class="fi-tc-triangle-warning"></i> Adicione a Localização
+        <i class="fi-tc-triangle-warning"></i>Por favor, adicione seu endereço
       </div>
     </div>
     <main>
       <!-- BANNER CATALOG -->
-      <section class="banner-catalog">
-        <div>
-          <i class="fi-tc-shopping-bag"></i>
-          <h3>Catálogo</h3>
-          <h4><em>Make in Casa</em></h4>
-        </div>
-      </section>
-      <!-- CATALOG -->
-      <section class="catalog content">
-        <div class="title">
+      <section class="shopping-cart">
+        <!-- <div class="title">
           <div>
-            <h2>Produtos em <em>Destaque</em></h2>
-            <p>Os melhores produtos da região</p>
+            <h2>Carrinho de <em>Compras</em></h2>
+            <p>Finalize seu pedido e garanta seu produto agora mesmo</p>
           </div>
-          <div class="title-search">
-            <i class="fi-tc-search"></i>
-            <input
-              type="search"
-              name=""
-              id="search"
-              placeholder="Pesquisar produto..."
-            />
+        </div> -->
+        <div class="shopping-box">
+          <div class="shopping-itens">
+            <h4>Produtos adicionados</h4>
+            <ul class="cart-box"></ul>
+          </div>
+          <div class="shopping-total">
+            <div class="fixed-box-total">
+              <h4>Resumo da compra</h4>
+              <div class="summary-box">
+                <p>Produtos (<span data-cart-count>0</span>)</p>
+                <h3>Total: R$ <span data-cart-total>0,00</span></h3>
+
+                <div>
+                  <h6>Adicione seu endereço para entrega</h6>
+                  <input
+                    type="text"
+                    name=""
+                    id=""
+                    placeholder="Ex: Quadra Make, Lote IN, Rua Casa..."
+                  />
+                </div>
+                <button class="btn">Finalizar Compra</button>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="no-product">
-          <i class="fi-tc-sad"></i>
-          <h4>O produto <em></em> não existe ou não foi encontrado!</h4>
-        </div>
-        <ul class="products-box">
-          <!-- MAKEUP -->
-        </ul>
       </section>
     </main>
     <!-- FOOTER -->
