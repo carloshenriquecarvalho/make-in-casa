@@ -1,17 +1,8 @@
-// ==========================================
-// cart.js — Versão final ajustada
-// ==========================================
-
-// -----------------------------
-// VARIÁVEIS GLOBAIS
-// -----------------------------
 let allProducts = [];
 let totalItems = 0;
 let totalPrice = 0;
 
-// -----------------------------
 // HELPERS
-// -----------------------------
 function getCart() {
   return JSON.parse(localStorage.getItem("cart")) || [];
 }
@@ -20,14 +11,10 @@ function saveCart(cart) {
   localStorage.setItem("cart", JSON.stringify(cart));
 }
 
-// ==========================================
-// 1) ATUALIZAR RESUMO IMEDIATAMENTE
-// ==========================================
+// ATUALIZAR RESUMO IMEDIATAMENTE
 updateCartSummary();
 
-// ==========================================
-// 2) CARREGAR JSON DO CATÁLOGO
-// ==========================================
+// CARREGAR JSON DO CATÁLOGO
 fetch("assets/js/catalog.json")
   .then((res) => res.json())
   .then((products) => {
@@ -44,9 +31,7 @@ fetch("assets/js/catalog.json")
     updateCartSummary();
   });
 
-// ==========================================
-// 3) PRINTAR CATÁLOGO
-// ==========================================
+// PRINTAR CATÁLOGO & HOMEPAGE
 function printProducts(list) {
   const box = document.querySelector(".products-box");
   if (!box) return;
@@ -71,9 +56,7 @@ function printProducts(list) {
   });
 }
 
-// ==========================================
-// 4) ADICIONAR AO CARRINHO
-// ==========================================
+// ADICIONAR AO CARRINHO
 function addToCart(id) {
   const product = allProducts.find((p) => p.id === id);
   if (!product) return;
@@ -108,9 +91,7 @@ function addToCart(id) {
   }, 1500);
 }
 
-// ==========================================
-// 5) CARREGAR CARRINHO (cart.html)
-// ==========================================
+// CARREGAR CARRINHO (cart.html)
 function loadCart() {
   const box = document.querySelector(".cart-box");
   if (!box) return;
@@ -119,7 +100,7 @@ function loadCart() {
   box.innerHTML = "";
 
   if (cart.length === 0) {
-    box.innerHTML = `<p class='cart-no-products'>Adicione produtos ao seu carrinho. <a href='catalog.html'>Conferir Produtos</a></p>`;
+    box.innerHTML = `<p class='cart-no-products'>Adicione produtos ao seu carrinho. <a href='catalogo.html'>Conferir Produtos</a></p>`;
     updateCartSummary();
     return;
   }
@@ -152,9 +133,7 @@ function loadCart() {
   updateCartSummary();
 }
 
-// ==========================================
-// 6) ATUALIZAR QUANTIDADE
-// ==========================================
+// ATUALIZAR QUANTIDADE
 function updateQuantity(id, action) {
   let cart = getCart();
   let item = cart.find((i) => i.id === id);
@@ -171,20 +150,22 @@ function updateQuantity(id, action) {
   updateCartSummary();
 }
 
-// ==========================================
-// 7) REMOVER ITEM
-// ==========================================
+// REMOVER ITEM
 function deleteItem(index) {
   let cart = getCart();
   cart.splice(index, 1);
   saveCart(cart);
   loadCart();
   updateCartSummary();
+
+  let messageDelete = document.querySelector(".message-delete");
+  messageDelete.style.display = "flex";
+  setTimeout(() => {
+    messageDelete.style.display = "none";
+  }, 1500);
 }
 
-// ==========================================
-// 8) CALCULAR RESUMO
-// ==========================================
+// CALCULAR RESUMO
 function calculateSummary() {
   let cart = getCart();
 
@@ -192,19 +173,15 @@ function calculateSummary() {
   totalPrice = cart.reduce((sum, item) => sum + item.quantity * item.price, 0);
 }
 
-// ==========================================
-// 9) ATUALIZAR RESUMO (FUNCIONA EM TODAS AS PÁGINAS)
-// ==========================================
+// ATUALIZAR RESUMO (FUNCIONA EM TODAS AS PÁGINAS)
 function updateCartSummary() {
   calculateSummary();
 
-  // ---- Atualiza todos os contadores ----
   document.querySelectorAll("[data-cart-count]").forEach((el) => {
     el.textContent = totalItems;
     el.style.display = totalItems > 0 ? "inline-flex" : "none";
   });
 
-  // ---- SUMMARY BOX ----
   const summaryBox = document.querySelector(".summary-box");
 
   if (!summaryBox) return;
@@ -233,9 +210,7 @@ function updateCartSummary() {
   `;
 }
 
-// ==========================================
-// 10) BUSCA
-// ==========================================
+// BUSCA
 const searchInput = document.getElementById("search");
 
 if (searchInput) {
@@ -259,16 +234,12 @@ if (searchInput) {
   });
 }
 
-// ==========================================
-// 11) FUNÇÕES GLOBAIS (para onclick)
-// ==========================================
+// FUNÇÕES GLOBAIS (para onclick)
 window.addToCart = addToCart;
 window.updateQuantity = updateQuantity;
 window.deleteItem = deleteItem;
 
-// ==========================================
-// 12) SINCRONIZAR ENTRE ABAS
-// ==========================================
+// SINCRONIZAR ENTRE ABAS
 window.addEventListener("storage", (event) => {
   if (event.key === "cart") {
     loadCart();
@@ -276,9 +247,7 @@ window.addEventListener("storage", (event) => {
   }
 });
 
-// ==========================================
-// 13) AO CARREGAR QUALQUER PÁGINA
-// ==========================================
+// AO CARREGAR QUALQUER PÁGINA
 document.addEventListener("DOMContentLoaded", () => {
   updateCartSummary();
 
@@ -287,14 +256,10 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 });
 
-// ORDER COMPLETED
-// =======================
 // ORDER COMPLETED + WHATSAPP
-// =======================
 function orderCompleted() {
   let inputAddres = document.querySelector(".input-addres").value;
 
-  // VALIDAR ENDEREÇO
   if (inputAddres.trim() === "") {
     let messageWarning = document.querySelector(".message-warning-final");
     messageWarning.style.display = "flex";
@@ -305,7 +270,6 @@ function orderCompleted() {
     return;
   }
 
-  // PEGAR CARRINHO DO LOCALSTORAGE
   let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
   if (cart.length === 0) {
@@ -313,7 +277,6 @@ function orderCompleted() {
     return;
   }
 
-  // MONTAR MENSAGEM
   let message = "*🛒 NOVO PEDIDO REALIZADO*\n\n";
   message += "*📍 Endereço de entrega:* " + inputAddres + "\n\n";
   message += "*Itens do pedido:*\n";
@@ -338,9 +301,7 @@ function orderCompleted() {
   let msgURL = encodeURIComponent(message);
   let phone = "5561998610854";
 
-  // REDIRECIONAR PARA WHATSAPP
   window.open(`https://wa.me/${phone}?text=${msgURL}`, "_blank");
 
-  // OPCIONAL: limpar carrinho depois do envio
   localStorage.removeItem("cart");
 }
