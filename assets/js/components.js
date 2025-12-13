@@ -63,7 +63,7 @@ class SiteHeader extends HTMLElement {
           <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="catalogo.html">Catálogo</a></li>
-            <li><a href="index.html#entrega">Formas de Entrega</a></li>
+            <li><a class='close-link' href="index.html#entrega">Formas de Entrega</a></li>
           </ul>
         </nav>
         <div class="box-icon-cart">
