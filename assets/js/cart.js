@@ -202,7 +202,8 @@ function updateCartSummary() {
       .replace(".", ",")}</span></h3>
 
     <div class='info-delivery'>
-      
+      <p>Entregas em Águas Lindas e no DF aos finais de semana.
+Frete grátis a partir de R$ 19,99</p>
       <input type="text" placeholder="Adicionar Endereço" class="input-addres" />
     </div>
 
@@ -299,7 +300,7 @@ function orderCompleted() {
   message += "*Aguardo confirmação do pedido!*";
 
   let msgURL = encodeURIComponent(message);
-  let phone = "5561998610854";
+  let phone = "556195075423";
 
   window.open(`https://wa.me/${phone}?text=${msgURL}`, "_blank");
 

@@ -1,56 +1,53 @@
 // LINKS AND SCRIPTS
 class SiteAssets extends HTMLElement {
   connectedCallback() {
-    // TITLE
+    // TITLE (correto)
+    let page = location.pathname.split("/").pop() || "index.html";
+    let title =
+      page === "index.html"
+        ? "Home"
+        : page.replace(".html", "").replace(/^\w/, (c) => c.toUpperCase());
 
-    let pageName = location.pathname;
-    let title = ((t) => t[0].toUpperCase() + t.slice(1))(
-      location.pathname.split("/").pop().replace(".html", "")
-    );
+    document.title = `Make In Casa - ${title}`;
 
-    if (pageName == "/index.html") {
-      title = "Home";
-      this.innerHTML = `
-        <title>Make In Casa - ${title}</title>
-      `;
-    } else {
-      this.innerHTML = `
-        <title>Make In Casa - ${title}</title>
-      `;
-    }
+    // CSS - garante head pronto
+    requestAnimationFrame(() => {
+      const styles = [
+        "assets/fonts/uicons-thin-chubby/css/uicons-thin-chubby.css",
+        "assets/css/style.css",
+      ];
 
-    // CSS
-    const styles = [
-      "assets/fonts/uicons-thin-chubby/css/uicons-thin-chubby.css",
-      "assets/css/style.css",
-    ];
-
-    styles.forEach((href) => {
-      const link = document.createElement("link");
-      link.rel = "stylesheet";
-      link.href = href;
-      document.head.appendChild(link);
+      styles.forEach((href) => {
+        if (!document.querySelector(`link[href="${href}"]`)) {
+          const link = document.createElement("link");
+          link.rel = "stylesheet";
+          link.href = href;
+          document.head.appendChild(link);
+        }
+      });
     });
 
-    // JS
-    const scripts = ["assets/js/index.js", "assets/js/cart.js"];
+    // JS - só depois de tudo carregado
+    window.addEventListener("load", () => {
+      const scripts = ["assets/js/index.js", "assets/js/cart.js"];
 
-    scripts.forEach((src) => {
-      const script = document.createElement("script");
-      script.src = src;
-      script.defer = true;
-      document.body.appendChild(script);
+      scripts.forEach((src) => {
+        if (!document.querySelector(`script[src="${src}"]`)) {
+          const script = document.createElement("script");
+          script.src = src;
+          script.defer = true;
+          document.body.appendChild(script);
+        }
+      });
     });
 
     // FAVICON
-    const favicon = ["assets/imgs/logo/favicon.png"];
-
-    favicon.forEach((href) => {
+    if (!document.querySelector('link[rel="shortcut icon"]')) {
       const favicon = document.createElement("link");
       favicon.rel = "shortcut icon";
-      favicon.href = href;
+      favicon.href = "assets/imgs/logo/favicon.png";
       document.head.appendChild(favicon);
-    });
+    }
   }
 }
 
@@ -65,10 +62,8 @@ class SiteHeader extends HTMLElement {
         <nav>
           <ul>
             <li><a href="index.html">Home</a></li>
-            <li><a href="catalogo.html">Catalogo</a></li>
-            <li><a href="#">Sobre</a></li>
-            <li><a href="#">Contato</a></li>
-            <li><a href="#">Mais</a></li>
+            <li><a href="catalogo.html">Catálogo</a></li>
+            <li><a href="index.html#entrega">Formas de Entrega</a></li>
           </ul>
         </nav>
         <div class="box-icon-cart">
@@ -139,15 +134,12 @@ class SiteFooter extends HTMLElement {
         <nav>
           <ul>
             <li><a href="index.html">Home</a></li>
-            <li><a href="catalogo.html">Catalogo</a></li>
-            <li><a href="#">Sobre</a></li>
-            <li><a href="#">Contato</a></li>
-            <li><a href="#">Mais</a></li>
+            <li><a href="catalogo.html">Catálogo</a></li>
           </ul>
         </nav>
         <nav class="social-medias-footer">
           <li>
-            <a href="index.html" title="WhatsApp">
+            <a href="https://api.whatsapp.com/send/?phone=556195075423" target='_blank' title="WhatsApp">
               <svg
                 viewBox="0 0 24 24"
                 fill="none"
@@ -173,7 +165,7 @@ class SiteFooter extends HTMLElement {
             </a>
           </li>
           <li>
-            <a href="index.html" title="Instagram">
+            <a href="https://www.instagram.com/make_in_casa" target='_blank' title="Instagram">
               <svg
                 viewBox="0 0 24 24"
                 fill="none"
@@ -203,53 +195,11 @@ class SiteFooter extends HTMLElement {
               </svg>
             </a>
           </li>
-          <li>
-            <a href="index.html" title="Facebook">
-              <svg
-                viewBox="-5 0 20 20"
-                version="1.1"
-                xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink"
-              >
-                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                <g
-                  id="SVGRepo_tracerCarrier"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                ></g>
-                <g id="SVGRepo_iconCarrier">
-                  <title>facebook [#176]</title>
-                  <desc>Created with Sketch.</desc>
-                  <defs></defs>
-                  <g
-                    id="Page-1"
-                    stroke="none"
-                    stroke-width="1"
-                    fill-rule="evenodd"
-                  >
-                    <g
-                      id="Dribbble-Light-Preview"
-                      transform="translate(-385.000000, -7399.000000)"
-                    >
-                      <g
-                        id="icons"
-                        transform="translate(56.000000, 160.000000)"
-                      >
-                        <path
-                          d="M335.821282,7259 L335.821282,7250 L338.553693,7250 L339,7246 L335.821282,7246 L335.821282,7244.052 C335.821282,7243.022 335.847593,7242 337.286884,7242 L338.744689,7242 L338.744689,7239.14 C338.744689,7239.097 337.492497,7239 336.225687,7239 C333.580004,7239 331.923407,7240.657 331.923407,7243.7 L331.923407,7246 L329,7246 L329,7250 L331.923407,7250 L331.923407,7259 L335.821282,7259 Z"
-                          id="facebook-[#176]"
-                        ></path>
-                      </g>
-                    </g>
-                  </g>
-                </g>
-              </svg>
-            </a>
-          </li>
+          
         </nav>
         <p>
           © 2025 Make In Casa. Todos os direitos reservados.
-          <a href="politicasdeprivacidade.html">Políticas de Privacidade</a>
+          
         </p>
       </footer>
 
@@ -258,3 +208,49 @@ class SiteFooter extends HTMLElement {
 }
 
 customElements.define("site-footer", SiteFooter);
+
+// <a href="politicasdeprivacidade.html">Políticas de Privacidade</a>
+
+// <li>
+//             <a href="index.html" title="Facebook">
+//               <svg
+//                 viewBox="-5 0 20 20"
+//                 version="1.1"
+//                 xmlns="http://www.w3.org/2000/svg"
+//                 xmlns:xlink="http://www.w3.org/1999/xlink"
+//               >
+//                 <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+//                 <g
+//                   id="SVGRepo_tracerCarrier"
+//                   stroke-linecap="round"
+//                   stroke-linejoin="round"
+//                 ></g>
+//                 <g id="SVGRepo_iconCarrier">
+//                   <title>facebook [#176]</title>
+//                   <desc>Created with Sketch.</desc>
+//                   <defs></defs>
+//                   <g
+//                     id="Page-1"
+//                     stroke="none"
+//                     stroke-width="1"
+//                     fill-rule="evenodd"
+//                   >
+//                     <g
+//                       id="Dribbble-Light-Preview"
+//                       transform="translate(-385.000000, -7399.000000)"
+//                     >
+//                       <g
+//                         id="icons"
+//                         transform="translate(56.000000, 160.000000)"
+//                       >
+//                         <path
+//                           d="M335.821282,7259 L335.821282,7250 L338.553693,7250 L339,7246 L335.821282,7246 L335.821282,7244.052 C335.821282,7243.022 335.847593,7242 337.286884,7242 L338.744689,7242 L338.744689,7239.14 C338.744689,7239.097 337.492497,7239 336.225687,7239 C333.580004,7239 331.923407,7240.657 331.923407,7243.7 L331.923407,7246 L329,7246 L329,7250 L331.923407,7250 L331.923407,7259 L335.821282,7259 Z"
+//                           id="facebook-[#176]"
+//                         ></path>
+//                       </g>
+//                     </g>
+//                   </g>
+//                 </g>
+//               </svg>
+//             </a>
+//           </li>
