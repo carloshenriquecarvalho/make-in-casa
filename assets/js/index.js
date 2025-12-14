@@ -1,31 +1,21 @@
-// MENU LINKS
+const header = document.querySelector("header");
+const navMenu = document.querySelector("header nav");
+const openMenu = document.querySelector(".open-menu");
+const closeMenu = document.querySelector(".close-menu");
+const closeLink = document.querySelector(".close-link");
 
-// SCROLLBARR
-let header = document.querySelector("header");
-window.addEventListener("scroll", function () {
+window.addEventListener("scroll", () => {
   header.classList.toggle("menuScroll", window.scrollY > 80);
 });
 
-// OPEN MENU
-let openMenu = document.querySelector(".open-menu");
-let navMenu = document.querySelector("header nav");
-let closeMenu = document.querySelector(".close-menu");
-let closeLink = document.querySelector(".close-link");
+const openMobileMenu = () => {
+  header.classList.add("menu-open");
+};
 
-openMenu.addEventListener("click", function () {
-  navMenu.style.display = "flex";
-  openMenu.style.display = "none";
-  closeMenu.style.display = "flex";
-});
+const closeMobileMenu = () => {
+  header.classList.remove("menu-open");
+};
 
-closeMenu.addEventListener("click", function () {
-  navMenu.style.display = "none";
-  openMenu.style.display = "flex";
-  closeMenu.style.display = "none";
-});
-
-closeLink.addEventListener("click", function () {
-  navMenu.style.display = "none";
-  openMenu.style.display = "flex";
-  closeMenu.style.display = "none";
-});
+openMenu.addEventListener("click", openMobileMenu);
+closeMenu.addEventListener("click", closeMobileMenu);
+closeLink.addEventListener("click", closeMobileMenu);

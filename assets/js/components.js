@@ -1,7 +1,5 @@
-// LINKS AND SCRIPTS
 class SiteAssets extends HTMLElement {
   connectedCallback() {
-    // TITLE (correto)
     let page = location.pathname.split("/").pop() || "index.html";
     let title =
       page === "index.html"
@@ -9,12 +7,9 @@ class SiteAssets extends HTMLElement {
         : page.replace(".html", "").replace(/^\w/, (c) => c.toUpperCase());
 
     document.title = `Make In Casa - ${title}`;
-
-    // CSS - garante head pronto
     requestAnimationFrame(() => {
       const styles = [
         "assets/fonts/uicons-thin-chubby/css/uicons-thin-chubby.css",
-        "assets/css/style.css",
       ];
 
       styles.forEach((href) => {
@@ -26,8 +21,6 @@ class SiteAssets extends HTMLElement {
         }
       });
     });
-
-    // JS - só depois de tudo carregado
     window.addEventListener("load", () => {
       const scripts = ["assets/js/index.js", "assets/js/cart.js"];
 
@@ -40,8 +33,6 @@ class SiteAssets extends HTMLElement {
         }
       });
     });
-
-    // FAVICON
     if (!document.querySelector('link[rel="shortcut icon"]')) {
       const favicon = document.createElement("link");
       favicon.rel = "shortcut icon";
@@ -52,13 +43,11 @@ class SiteAssets extends HTMLElement {
 }
 
 customElements.define("site-assets", SiteAssets);
-
-// HEADER
 class SiteHeader extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `
       <header>
-        <img src="assets/imgs/logo/logo-left.png" alt="Logomarca Make In Casa" />
+        <a href='index.html'><img src="assets/imgs/logo/logo-left.png" alt="Logomarca Make In Casa" loading="lazy"/></a>
         <nav>
           <ul>
             <li><a href="index.html">Home</a></li>
@@ -100,8 +89,6 @@ class SiteHeader extends HTMLElement {
 }
 
 customElements.define("site-header", SiteHeader);
-
-// MESSAGES
 class SiteMessages extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `
@@ -121,22 +108,11 @@ class SiteMessages extends HTMLElement {
 }
 
 customElements.define("site-messages", SiteMessages);
-
-// FOOOTER
 class SiteFooter extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `
       <footer>
-        <img
-          src="assets/imgs/logo/logo-left.png"
-          alt="Logomarca Make In Casa"
-        />
-        <nav>
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="catalogo.html">Catálogo</a></li>
-          </ul>
-        </nav>
+                <a href='index.html'><img src="assets/imgs/logo/logo-left.png" alt="Logomarca Make In Casa" loading="lazy"/></a>
         <nav class="social-medias-footer">
           <li>
             <a href="https://api.whatsapp.com/send/?phone=556195075423" target='_blank' title="WhatsApp">
@@ -208,49 +184,3 @@ class SiteFooter extends HTMLElement {
 }
 
 customElements.define("site-footer", SiteFooter);
-
-// <a href="politicasdeprivacidade.html">Políticas de Privacidade</a>
-
-// <li>
-//             <a href="index.html" title="Facebook">
-//               <svg
-//                 viewBox="-5 0 20 20"
-//                 version="1.1"
-//                 xmlns="http://www.w3.org/2000/svg"
-//                 xmlns:xlink="http://www.w3.org/1999/xlink"
-//               >
-//                 <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-//                 <g
-//                   id="SVGRepo_tracerCarrier"
-//                   stroke-linecap="round"
-//                   stroke-linejoin="round"
-//                 ></g>
-//                 <g id="SVGRepo_iconCarrier">
-//                   <title>facebook [#176]</title>
-//                   <desc>Created with Sketch.</desc>
-//                   <defs></defs>
-//                   <g
-//                     id="Page-1"
-//                     stroke="none"
-//                     stroke-width="1"
-//                     fill-rule="evenodd"
-//                   >
-//                     <g
-//                       id="Dribbble-Light-Preview"
-//                       transform="translate(-385.000000, -7399.000000)"
-//                     >
-//                       <g
-//                         id="icons"
-//                         transform="translate(56.000000, 160.000000)"
-//                       >
-//                         <path
-//                           d="M335.821282,7259 L335.821282,7250 L338.553693,7250 L339,7246 L335.821282,7246 L335.821282,7244.052 C335.821282,7243.022 335.847593,7242 337.286884,7242 L338.744689,7242 L338.744689,7239.14 C338.744689,7239.097 337.492497,7239 336.225687,7239 C333.580004,7239 331.923407,7240.657 331.923407,7243.7 L331.923407,7246 L329,7246 L329,7250 L331.923407,7250 L331.923407,7259 L335.821282,7259 Z"
-//                           id="facebook-[#176]"
-//                         ></path>
-//                       </g>
-//                     </g>
-//                   </g>
-//                 </g>
-//               </svg>
-//             </a>
-//           </li>

@@ -45,7 +45,7 @@ function printProducts(list) {
       <li>  
         <i class='fi-tc-plus' title='Adicionar ao Carrinho' onclick='addToCart(${p.id})'></i>
         <figure>
-          <img src='${p.img}' alt='${p.name}'>
+          <img src='${p.img}' alt='${p.name}' loading="lazy">
         </figure>
         <div>
           <h3>${p.name}</h3>
@@ -111,7 +111,7 @@ function loadCart() {
     box.innerHTML += `
       <li class="cart-item">
         <figure>
-          <img src="${item.img}" alt="${item.name}">
+          <img src="${item.img}" alt="${item.name}" loading="lazy">
         </figure>
 
         <div class='infor-product-cart'>
