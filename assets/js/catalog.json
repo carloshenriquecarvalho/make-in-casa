@@ -2,7 +2,7 @@
   {
     "id": 1,
     "link": "",
-    "img": "assets/imgs/catalog/baseliquidacor310.png",
+    "img": "assets/imgs/catalog/baseliquidacor310.webp",
     "name": "Base Líquida Cor 310 Make",
     "price": 94.9,
     "category": "Pele"
@@ -10,7 +10,7 @@
   {
     "id": 2,
     "link": "",
-    "img": "assets/imgs/catalog/batomvermelhointense.png",
+    "img": "assets/imgs/catalog/batomvermelhointense.webp",
     "name": "Batom Vermelho Intense",
     "price": 32.9,
     "category": "Lábios"
@@ -18,7 +18,7 @@
   {
     "id": 3,
     "link": "",
-    "img": "assets/imgs/catalog/paletadesombrasbrunatavares.png",
+    "img": "assets/imgs/catalog/paletadesombrasbrunatavares.webp",
     "name": "Paleta De Sombras Bruna Tavares",
     "price": 72.3,
     "category": "Olhos"
@@ -26,7 +26,7 @@
   {
     "id": 4,
     "link": "",
-    "img": "assets/imgs/catalog/dailuscanetadelineadoracat.png",
+    "img": "assets/imgs/catalog/dailuscanetadelineadoracat.webp",
     "name": "Dailus Caneta Delineador Cat",
     "price": 32.33,
     "category": "Olhos"
@@ -34,7 +34,7 @@
   {
     "id": 5,
     "link": "",
-    "img": "assets/imgs/catalog/pocompactovultmakeupcor04.png",
+    "img": "assets/imgs/catalog/pocompactovultmakeupcor04.webp",
     "name": "Pó Compacto Vult Make Up Cor 04",
     "price": 38.13,
     "category": "Pele"
@@ -42,7 +42,7 @@
   {
     "id": 6,
     "link": "",
-    "img": "assets/imgs/catalog/lipglossvolumoso.png",
+    "img": "assets/imgs/catalog/lipglossvolumoso.webp",
     "name": "Lip Gloss Volumoso incolor Max love",
     "price": 17.1,
     "category": "Lábios"
@@ -50,7 +50,7 @@
   {
     "id": 7,
     "link": "",
-    "img": "assets/imgs/catalog/mascaradecilioslavavel.png",
+    "img": "assets/imgs/catalog/mascaradecilioslavavel.webp",
     "name": "Máscara de Cílios Lavável",
     "price": 33.01,
     "category": "Olhos"
@@ -58,7 +58,7 @@
   {
     "id": 8,
     "link": "",
-    "img": "assets/imgs/catalog/miniblushbastaorosa.png",
+    "img": "assets/imgs/catalog/miniblushbastaorosa.webp",
     "name": "Mini Blush Em Bastão Rosa",
     "price": 56.03,
     "category": "Olhos"
