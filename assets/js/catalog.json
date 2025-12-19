@@ -1,66 +1,156 @@
 [
   {
     "id": 1,
-    "link": "",
-    "img": "assets/imgs/catalog/baseliquidacor310.webp",
-    "name": "Base Líquida Cor 310 Make",
-    "price": 94.9,
-    "category": "Pele"
+    "img": "assets/imgs/catalog/glosschaveirocheirinhodeuvaholdmorning.webp",
+    "name": "Gloss Chaveiro Cheirinho de Uva - Hold Morning",
+    "price": 15.99,
+    "category": "Lábios"
   },
   {
     "id": 2,
-    "link": "",
-    "img": "assets/imgs/catalog/batomvermelhointense.webp",
-    "name": "Batom Vermelho Intense",
-    "price": 32.9,
+    "img": "assets/imgs/catalog/lipglossmelchaveirinhodegirassolyoyomaquiamor.webp",
+    "name": "Lip Gloss Mel Chaveirinho de Girassol - Yoyomaquiamor",
+    "price": 9.99,
     "category": "Lábios"
   },
   {
     "id": 3,
-    "link": "",
-    "img": "assets/imgs/catalog/paletadesombrasbrunatavares.webp",
-    "name": "Paleta De Sombras Bruna Tavares",
-    "price": 72.3,
-    "category": "Olhos"
+    "img": "assets/imgs/catalog/saboneteintimobabasouldeuva200ml.webp",
+    "name": "Sabonete Íntimo Babasoul de Uva 200ml",
+    "price": 4.99,
+    "category": "Higiene"
   },
   {
     "id": 4,
-    "link": "",
-    "img": "assets/imgs/catalog/dailuscanetadelineadoracat.webp",
-    "name": "Dailus Caneta Delineador Cat",
-    "price": 32.33,
-    "category": "Olhos"
-  },
-  {
-    "id": 5,
-    "link": "",
-    "img": "assets/imgs/catalog/pocompactovultmakeupcor04.webp",
-    "name": "Pó Compacto Vult Make Up Cor 04",
-    "price": 38.13,
-    "category": "Pele"
-  },
-  {
-    "id": 6,
-    "link": "",
-    "img": "assets/imgs/catalog/lipglossvolumoso.webp",
-    "name": "Lip Gloss Volumoso incolor Max love",
-    "price": 17.1,
+    "img": "assets/imgs/catalog/batomliquido24hhudabeauty.webp",
+    "name": "Batom Líquido 24h - Hudabeauty",
+    "price": 9.99,
     "category": "Lábios"
   },
   {
+    "id": 5,
+    "img": "assets/imgs/catalog/bigmascaradecilioshellokittymissbetty.webp",
+    "name": "Big Máscara de Cílios Hello Kitty - Miss Betty",
+    "price": 14.99,
+    "category": "Olhos"
+  },
+  {
+    "id": 6,
+    "img": "assets/imgs/catalog/pofacialalldaychocolatevivai.webp",
+    "name": "Pó Facial All Day Chocolate - Vivai",
+    "price": 7.99,
+    "category": "Pele"
+  },
+  {
     "id": 7,
-    "link": "",
-    "img": "assets/imgs/catalog/mascaradecilioslavavel.webp",
-    "name": "Máscara de Cílios Lavável",
-    "price": 33.01,
+    "img": "assets/imgs/catalog/mascaraparacilioscolossalyoyomaquiamor.webp",
+    "name": "Máscara para Cílios Colossal - Yoyomaquiamor",
+    "price": 9.99,
     "category": "Olhos"
   },
   {
     "id": 8,
-    "link": "",
-    "img": "assets/imgs/catalog/miniblushbastaorosa.webp",
-    "name": "Mini Blush Em Bastão Rosa",
-    "price": 56.03,
+    "img": "assets/imgs/catalog/posoltoultrafinolovelycor01a03facebeautiful.webp",
+    "name": "Pó Solto Ultrafino Lovely Cor 01 a 03 - Face Beautiful",
+    "price": 9.99,
+    "category": "Pele"
+  },
+  {
+    "id": 9,
+    "img": "assets/imgs/catalog/paletaquartetodeblushfacialmatteludurana.webp",
+    "name": "Paleta Quarteto de Blush Facial Matte - Ludurana",
+    "price": 16.99,
+    "category": "Pele"
+  },
+  {
+    "id": 10,
+    "img": "assets/imgs/catalog/iluminadorsuperstarhudamoji.webp",
+    "name": "Iluminador Super Star - Hudamoji",
+    "price": 7.99,
+    "category": "Pele"
+  },
+  {
+    "id": 11,
+    "img": "assets/imgs/catalog/blusheiluminadorliquido2em1belleangel.webp",
+    "name": "Blush e Iluminador Líquido 2 em 1 - Belle Angel",
+    "price": 11.99,
+    "category": "Pele"
+  },
+  {
+    "id": 12,
+    "img": "assets/imgs/catalog/corretivojasminyultrachiccoresescuras.webp",
+    "name": "Corretivo Jasminy Ultra Chic - Cores Escuras",
+    "price": 11.99,
+    "category": "Pele"
+  },
+  {
+    "id": 13,
+    "img": "assets/imgs/catalog/corretivoliquidolabranche.webp",
+    "name": "Corretivo Líquido Labranche",
+    "price": 11.99,
+    "category": "Pele"
+  },
+  {
+    "id": 14,
+    "img": "assets/imgs/catalog/contornobastaoluaeneve.webp",
+    "name": "Contorno em Bastão - Lua & Neve",
+    "price": 11.99,
+    "category": "Pele"
+  },
+  {
+    "id": 15,
+    "img": "assets/imgs/catalog/blushstickvelvetcheekamoranjo.webp",
+    "name": "Blush Stick Velvet Cheek - Amor Anjo",
+    "price": 14.99,
+    "category": "Pele"
+  },
+  {
+    "id": 16,
+    "img": "assets/imgs/catalog/modeladordesobrancelhasoapbrowvivai.webp",
+    "name": "Modelador de Sobrancelha Soap Brow - Vivai",
+    "price": 7.99,
+    "category": "Sobrancelhas"
+  },
+  {
+    "id": 17,
+    "img": "assets/imgs/catalog/baseliquidasuperfixorubykisses.webp",
+    "name": "Base Líquida Super Fixo - Ruby Kisses",
+    "price": 9.99,
+    "category": "Pele"
+  },
+  {
+    "id": 18,
+    "img": "assets/imgs/catalog/baseliquidasoftblendf10rubyrose.webp",
+    "name": "Base Líquida Soft Blend F10 - Ruby Rose",
+    "price": 18.99,
+    "category": "Pele"
+  },
+  {
+    "id": 19,
+    "img": "assets/imgs/catalog/gelparasobrancelhasuperbrownaturalstylinglovenrain.webp",
+    "name": "Gel para Sobrancelha Super Brow Natural Styling - Loven Rain",
+    "price": 11.99,
+    "category": "Sobrancelhas"
+  },
+  {
+    "id": 20,
+    "img": "assets/imgs/catalog/colaparaciliosposticosaprovadaguamacrilantransparente.webp",
+    "name": "Cola para Cílios Postiços à Prova D'Água - Macrilan",
+    "price": 11.99,
     "category": "Olhos"
+  },
+  {
+    "id": 21,
+    "img": "assets/imgs/catalog/esponjamangomakeuppuffesponjamanga.webp",
+    "name": "Esponja Mango Makeup Puff (Esponja Manga)",
+    "price": 3.99,
+    "category": "Acessórios"
+  },
+  {
+    "id": 22,
+    "img": "assets/imgs/catalog/iluminadorfacialecorporalspraypowderamoranjo.webp",
+    "name": "Iluminador Facial e Corporal Spray Powder - Amor Anjo",
+    "price": 19.99,
+    "category": "Pele"
   }
 ]
