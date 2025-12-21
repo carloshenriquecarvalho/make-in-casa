@@ -4,140 +4,140 @@
     "img": "assets/imgs/catalog/glosschaveirocheirinhodeuvaholdmorning.webp",
     "name": "Gloss Chaveiro Cheirinho de Uva - Hold Morning",
     "price": 15.99,
-    "category": "Lábios"
+    "category": "maquiagem"
   },
   {
     "id": 2,
     "img": "assets/imgs/catalog/lipglossmelchaveirinhodegirassolyoyomaquiamor.webp",
     "name": "Lip Gloss Mel Chaveirinho de Girassol - Yoyomaquiamor",
     "price": 9.99,
-    "category": "Lábios"
+    "category": "maquiagem"
   },
   {
     "id": 3,
     "img": "assets/imgs/catalog/saboneteintimobabasouldeuva200ml.webp",
     "name": "Sabonete Íntimo Babasoul de Uva 200ml",
     "price": 4.99,
-    "category": "Higiene"
+    "category": "maquiagem"
   },
   {
     "id": 4,
     "img": "assets/imgs/catalog/batomliquido24hhudabeauty.webp",
     "name": "Batom Líquido 24h - Hudabeauty",
     "price": 9.99,
-    "category": "Lábios"
+    "category": "maquiagem"
   },
   {
     "id": 5,
     "img": "assets/imgs/catalog/bigmascaradecilioshellokittymissbetty.webp",
     "name": "Big Máscara de Cílios Hello Kitty - Miss Betty",
     "price": 14.99,
-    "category": "Olhos"
+    "category": "maquiagem"
   },
   {
     "id": 6,
     "img": "assets/imgs/catalog/pofacialalldaychocolatevivai.webp",
     "name": "Pó Facial All Day Chocolate - Vivai",
     "price": 7.99,
-    "category": "Pele"
+    "category": "maquiagem"
   },
   {
     "id": 7,
     "img": "assets/imgs/catalog/mascaraparacilioscolossalyoyomaquiamor.webp",
     "name": "Máscara para Cílios Colossal - Yoyomaquiamor",
     "price": 9.99,
-    "category": "Olhos"
+    "category": "maquiagem"
   },
   {
     "id": 8,
     "img": "assets/imgs/catalog/posoltoultrafinolovelycor01a03facebeautiful.webp",
     "name": "Pó Solto Ultrafino Lovely Cor 01 a 03 - Face Beautiful",
     "price": 9.99,
-    "category": "Pele"
+    "category": "maquiagem"
   },
   {
     "id": 9,
     "img": "assets/imgs/catalog/paletaquartetodeblushfacialmatteludurana.webp",
     "name": "Paleta Quarteto de Blush Facial Matte - Ludurana",
     "price": 16.99,
-    "category": "Pele"
+    "category": "maquiagem"
   },
   {
     "id": 10,
     "img": "assets/imgs/catalog/iluminadorsuperstarhudamoji.webp",
     "name": "Iluminador Super Star - Hudamoji",
     "price": 7.99,
-    "category": "Pele"
+    "category": "maquiagem"
   },
   {
     "id": 11,
     "img": "assets/imgs/catalog/blusheiluminadorliquido2em1belleangel.webp",
     "name": "Blush e Iluminador Líquido 2 em 1 - Belle Angel",
     "price": 11.99,
-    "category": "Pele"
+    "category": "maquiagem"
   },
   {
     "id": 12,
     "img": "assets/imgs/catalog/corretivojasminyultrachiccoresescuras.webp",
     "name": "Corretivo Jasminy Ultra Chic - Cores Escuras",
     "price": 11.99,
-    "category": "Pele"
+    "category": "maquiagem"
   },
   {
     "id": 13,
     "img": "assets/imgs/catalog/corretivoliquidolabranche.webp",
     "name": "Corretivo Líquido Labranche",
     "price": 11.99,
-    "category": "Pele"
+    "category": "maquiagem"
   },
   {
     "id": 14,
     "img": "assets/imgs/catalog/contornobastaoluaeneve.webp",
     "name": "Contorno em Bastão - Lua & Neve",
     "price": 11.99,
-    "category": "Pele"
+    "category": "maquiagem"
   },
   {
     "id": 15,
     "img": "assets/imgs/catalog/blushstickvelvetcheekamoranjo.webp",
     "name": "Blush Stick Velvet Cheek - Amor Anjo",
     "price": 14.99,
-    "category": "Pele"
+    "category": "maquiagem"
   },
   {
     "id": 16,
     "img": "assets/imgs/catalog/modeladordesobrancelhasoapbrowvivai.webp",
     "name": "Modelador de Sobrancelha Soap Brow - Vivai",
     "price": 7.99,
-    "category": "Sobrancelhas"
+    "category": "maquiagem"
   },
   {
     "id": 17,
     "img": "assets/imgs/catalog/baseliquidasuperfixorubykisses.webp",
     "name": "Base Líquida Super Fixo - Ruby Kisses",
     "price": 9.99,
-    "category": "Pele"
+    "category": "maquiagem"
   },
   {
     "id": 18,
     "img": "assets/imgs/catalog/baseliquidasoftblendf10rubyrose.webp",
     "name": "Base Líquida Soft Blend F10 - Ruby Rose",
     "price": 18.99,
-    "category": "Pele"
+    "category": "maquiagem"
   },
   {
     "id": 19,
     "img": "assets/imgs/catalog/gelparasobrancelhasuperbrownaturalstylinglovenrain.webp",
     "name": "Gel para Sobrancelha Super Brow Natural Styling - Loven Rain",
     "price": 11.99,
-    "category": "Sobrancelhas"
+    "category": "maquiagem"
   },
   {
     "id": 20,
     "img": "assets/imgs/catalog/colaparaciliosposticosaprovadaguamacrilantransparente.webp",
     "name": "Cola para Cílios Postiços à Prova D'Água - Macrilan",
     "price": 11.99,
-    "category": "Olhos"
+    "category": "maquiagem"
   },
   {
     "id": 21,
@@ -151,6 +151,6 @@
     "img": "assets/imgs/catalog/iluminadorfacialecorporalspraypowderamoranjo.webp",
     "name": "Iluminador Facial e Corporal Spray Powder - Amor Anjo",
     "price": 19.99,
-    "category": "Pele"
+    "category": "maquiagem"
   }
 ]
